@@ -1,5 +1,5 @@
 ## Q3 - Modern Art
-
+---
 In this problem, we need to work out the **nth** term in the sequence.
 
 ##### The example sequence is
@@ -26,8 +26,8 @@ The main way to approach a problem like this is to find some way to reduce the n
 Let's first find a way to work out the total number of terms for a given input.
 For the input `1 2 1 0 8`, we interpret that as 1 A, 2 Bs and 1 C.
 
-###The maths 
-
+### The maths 
+---
 To help gain an understanding of the maths that can be used to work out the total number of terms, let's first look at what is the case if we have one of each letter.
 
 ```
@@ -38,8 +38,8 @@ To help gain an understanding of the maths that can be used to work out the tota
 
 It becomes clear that when you only have one of each letter, you can work out the number of terms by just taking `factorial(number of letters)`.
 
-####Why is this the case?
-
+#### Why is this the case?
+---
 Think of the term as *n* blank spaces - *n* being the total number of letters.
 
 **(e.g 4 letters,    _ _ _ _ )**
@@ -67,8 +67,8 @@ Our algorithm will work like this
 3. If there are less terms starting with an A than the current index then we try B, then C, and finally D
 4. We repeat this process for each gap, which builds up the answer step by step
 
-#####Here's an example:
-
+##### Here's an example:
+---
 Let's say we have 1 A, 1 B, 1 C, 1 D and our target is 10
 
 Our current answer is `""` - empty
